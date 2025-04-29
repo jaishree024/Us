@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../1e490cf5a9eefca29d4c7f5bbe652732.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: rgb(255, 229, 233);
+}
+
+.container {
+  width: 100%; /* full width on small screens */
+  padding: 0 1rem; /* horizontal gutter */
+  font-family: "Cormorant Garamond", serif;
+  margin: auto;
+}
+.heading {
+  font-size: 80px;
+  text-align: center;
+  /* transform: translate(-50%,-50%); */
+  margin-top: 25vh;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    margin-top: 15vh;
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* optional: fluid container using clamp for auto-scaling */
+.container-fluid {
+  width: 100%;
+  max-width: clamp(300px, 100%, 1200px);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
