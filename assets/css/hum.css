@@ -28,6 +28,20 @@ body {
   /* transform: translate(-50%,-50%); */
   margin-top: 25vh;
 }
+.video-box {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #333;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto; /* centers the box horizontally */
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (min-width: 576px) {
   .container {
@@ -44,6 +58,9 @@ body {
   .heading {
     margin-top: 15vh;
     font-size: 70px;
+  }
+  .video-box {
+    width: 300px;
   }
 }
 
