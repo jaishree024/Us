@@ -28,6 +28,34 @@ body {
   /* transform: translate(-50%,-50%); */
   margin-top: 25vh;
 }
+.message {
+  margin-top: 40px;
+}
+.audio-player-container {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: 0.3s ease;
+}
+
+.audio-player-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.audio-player-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
 
 @media (min-width: 576px) {
   .container {
