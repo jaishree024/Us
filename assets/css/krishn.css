@@ -63,6 +63,9 @@ audio {
   letter-spacing: -1px;
   font-weight: 500;
   max-width: 80vw;
+  background-color: #54623ea8;
+  border-radius: 15px;
+  padding-left: 11px;
 }
 
 @media (min-width: 576px) {
